@@ -4,13 +4,37 @@ body, html {
     margin: 0;
 }
 
-header {
-    height: 10vh;
+body {
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    position: fixed;
+    height: 60px;
+    width: 100%;
     background-color: #333;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
+    top: 0;
+}
+
+nav ul {
+    list-style: none;
+    color: white;
+    display: flex;
+}
+
+nav li {
+    margin: 0 1rem 0 1rem;
+}
+
+nav a {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
 }
 
 h1,h2,h3 {
@@ -23,32 +47,91 @@ h2 {
     margin: 1rem 0 1rem 0;
 }
 
-#deck {
+main {
+    height: 80vh;
     display: flex;
-    flex-wrap: wrap;
+    align-content: center;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
 }
 
 #hand {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn {
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    border: 2px solid black;
+    border-radius: 25px;
+    cursor: pointer;
+    display: flex;
+    background-color: white;
+    margin: 2rem;
+}
+
+#hand:hover .card {
+    transform: scale(.90);
+    opacity: 0.7;
+}
+
+#hand .card:hover {
+    box-shadow: 10px 10px 5px grey;
+    transform: scale(1.15);
+    cursor: grab;
+    opacity: 1;
 }
 
 .card {
-    height: 150px;
-    width: 95px;
+    height: 88.000046mm;
+    width: 63.000134mm;
     transition: .25s;
     border: 2px solid black;
     border-radius: 15px;
-    background-size: 95px 150px;
-    background-position: center;
-    background-repeat: no-repeat;
     margin: 1rem;
 }
 
-.card:hover {
-    box-shadow: 10px 10px 5px grey;
-    transform: scale(1.1);
+.card:not(.back) {
+    background-color: white;
+    display: inline-grid;
+    grid-template-rows: 15px 1r 15px;
+    grid-template-columns: 15px 1r 15px;
+}
+
+.card .ace {
+    content: "hi";
+}
+
+@media only screen and (max-width: 824px) {
+    .card {
+        transform: scale(.75);
+        margin: 0;
+    }
+    main {
+        height: 30vh;
+    }
 }
