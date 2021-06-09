@@ -16,11 +16,17 @@ var numbers = [
 var suits = ["clubs", "diamond", "heart", "spades"];
 
 function reroll() {
-    var randomNumber = Math.floor(Math.random() * numbers.length);
-    console.log(numbers[randomNumber]);
-    var randomSuit = Math.floor(Math.random() * suits.length);
-    console.log(suits[randomSuit]);
-    var randomCard = "card " + numbers[randomNumber] + " " + suits[randomSuit];
-    console.log(randomCard);
-    document.getElementById("card1").className = randomCard;
+    for (i = 1; i < document.getElementById("hand").childElementCount+1; i++) {
+        var randomNumber = Math.floor(Math.random() * numbers.length);
+        var randomSuit = Math.floor(Math.random() * suits.length);
+        var randomCard = "card " + numbers[randomNumber] + " " + suits[randomSuit];
+        document.getElementById("card" + i).className = randomCard; 
+    }
 }
+function newCard() {
+    var node = document.createElement("div");
+    var textnode = document.createTextNode("card" + document.getElementById("hand").childElementCount+1);
+    node.appendChild(textnode);
+    document.getElementById("hand").appendChild(node);
+}
+reroll();

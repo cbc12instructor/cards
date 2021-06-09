@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/stylesheet.css">
     <link rel="stylesheet" href="css/cards.css">
-    <script src="/js/cards.js"></script>
     <title>Cards</title>
 </head>
 
@@ -20,24 +19,20 @@
             <li><a href="#">Castle</a></li>
         </ul>
     </nav>
-    <!-- <h2>Deck</h2>
-    <div id="deck">
-        <div class="card back"></div>
-        <div class="card back"></div>
-        <div class="card back"></div>
-    </div> -->
     <main>
         <div id="hand">
-            <div id="card1" class="card ace spades"></div>
-            <div id="card2" class="card two spades"></div>
-            <div id="card3" class="card three spades"></div>
-            <div id="card4" class="card four spades"></div>
-            <div id="card5" class="card five spades"></div>
+            <div id="card1" class="card"></div>
+            <div id="card2" class="card"></div>
+            <div id="card3" class="card"></div>
+            <div id="card4" class="card"></div>
+            <div id="card5" class="card"></div>
+            <div id="new-card" class="card"onclick="reroll()">+</div>
         </div>
     </main>
     <footer>
-        <button id="redraw-btn" class="btn" onclick="reroll()">Redraw</button>
+        <button class="btn" onclick="reroll()">Redraw</button>
     </footer>
 </body>
+<script src="js/cards.js"></script>
 
 </html>
