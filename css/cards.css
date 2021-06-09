@@ -1,0 +1,72 @@
+body, html {
+    background-color: #ccc;
+}
+
+h1,h2,h3 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#deck {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5px;
+}
+
+#hand {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 5px;
+}
+
+.card {
+    background-color: white;
+    height: 150px;
+    width: 95px;
+    padding: 5px;
+    transition: .25s;
+}
+
+.card:hover {
+    box-shadow: 10px 10px 5px grey;
+    height: 175px;
+    width: 110px;
+}
+
+.back {
+    background-image: url(https://cdn.shopify.com/s/files/1/0200/7616/products/playing-cards-tally-ho-circle-back-1_1024x1024.png?v=1575351986);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#three-clovers {
+    background-image: url(https://cdn2.bigcommerce.com/n-d57o0b/1kujmu/products/297/images/925/3C__99122.1440113509.1280.1280.png?c=2);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#four-hearts {
+    background-image: url(https://cdn2.bigcommerce.com/n-d57o0b/1kujmu/products/297/images/926/4H__83243.1440113515.1280.1280.png?c=2);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#five-spades {
+    background-image: url(https://cdn2.bigcommerce.com/n-d57o0b/1kujmu/products/297/images/927/5S__90574.1440113521.1280.1280.png?c=2);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#six-diamonds {
+    background-image: url(https://cdn2.bigcommerce.com/n-d57o0b/1kujmu/products/297/images/928/6D__92916.1440113530.1280.1280.png?c=2);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#seven-spades {
+    background-image: url(https://cdn2.bigcommerce.com/n-d57o0b/1kujmu/products/297/images/929/7C__93490.1440113539.1280.1280.png?c=2);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
