@@ -11,7 +11,7 @@ body {
 
 nav {
     position: fixed;
-    height: 60px;
+    height: 5vh;
     width: 100%;
     background-color: #333;
     display: flex;
@@ -51,7 +51,6 @@ main {
     height: 80vh;
     display: flex;
     align-content: center;
-    justify-content: center;
     flex-direction: column;
     align-items: center;
     margin-top: 60px;
@@ -112,14 +111,12 @@ footer {
 
 #hand:hover .card {
     transform: scale(.90);
-    opacity: 0.7;
 }
 
 #hand .card:hover {
     box-shadow: 10px 10px 5px grey;
     transform: scale(1.15);
     cursor: grab;
-    opacity: 1;
 }
 
 .card {

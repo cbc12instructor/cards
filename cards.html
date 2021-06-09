@@ -7,10 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/stylesheet.css">
     <link rel="stylesheet" href="css/cards.css">
+    <script src="js/cards.js" defer></script>
+
     <title>Cards</title>
 </head>
 
 <body>
+    
     <nav>
         <h1>Cards!</h1>
         <ul>
@@ -22,17 +25,13 @@
     <main>
         <div id="hand">
             <div id="card1" class="card"></div>
-            <div id="card2" class="card"></div>
-            <div id="card3" class="card"></div>
-            <div id="card4" class="card"></div>
-            <div id="card5" class="card"></div>
-            <div id="new-card" class="card"onclick="reroll()">+</div>
+            <div id="new-card" class="card"onclick="newCard()">+</div>
         </div>
     </main>
+
     <footer>
         <button class="btn" onclick="reroll()">Redraw</button>
     </footer>
 </body>
-<script src="js/cards.js"></script>
 
 </html>
