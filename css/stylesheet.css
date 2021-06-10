@@ -1,3 +1,7 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 body, html {
     background-color: #ccc;
     padding: 0;
@@ -19,6 +23,7 @@ nav {
     align-items: center;
     color: white;
     top: 0;
+    z-index: 1;
 }
 
 nav ul {
@@ -56,7 +61,7 @@ main {
     margin-top: 60px;
 }
 
-#hand {
+#hand,#deck {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -123,19 +128,29 @@ footer {
     height: 88.000046mm;
     width: 63.000134mm;
     transition: .25s;
-    border: 2px solid black;
     border-radius: 15px;
     margin: 1rem;
 }
 
 #new-card {
-    font-size: 10rem;
+    background-color: #c8102e;
+    color: white;
+    font-size: 5rem;
     font-weight: bold;
     display: grid;
     justify-content: center;
     align-content: center;
     padding: 0;
-    margin: 0;
+    user-select: none;
+    transition: 0.2s;
+}
+
+#new-card:hover {
+    transform: scale(1.15);
+}
+
+#new-card:active {
+    transform: scale(1);
 }
 
 .card:not(.back) {

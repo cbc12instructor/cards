@@ -159,3 +159,9 @@
 .king.spades {
     background-image: url("/images/Vector Cards (Version 3.2)/FACES (BORDERED)/STANDARD BORDERED/Single Cards (One Per FIle)/SPADE-13-KING.svg");
 }
+.black.joker {
+    background-image: url("/images/Vector Cards (Version 3.2)/FACES (BORDERED)/STANDARD BORDERED/Single Cards (One Per FIle)/JOKER-2.svg");
+}
+.color.joker {
+    background-image: url("/images/Vector Cards (Version 3.2)/FACES (BORDERED)/STANDARD BORDERED/Single Cards (One Per FIle)/JOKER-3.svg");
+}

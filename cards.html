@@ -23,14 +23,19 @@
         </ul>
     </nav>
     <main>
+        <div class="deck">
+            <div id="new-card" class="card"onclick="newCard()">
+                <p id="total-cards">54</p>
+            </div>    
+        </div>
         <div id="hand">
-            <div id="card1" class="card"></div>
-            <div id="new-card" class="card"onclick="newCard()">+</div>
+            <div></div>
         </div>
     </main>
 
     <footer>
-        <button class="btn" onclick="reroll()">Redraw</button>
+        <button class="btn" onclick="reDraw()">Redraw</button>
+        <button class="btn" onclick="newCard()">New Card</button>
     </footer>
 </body>
 
